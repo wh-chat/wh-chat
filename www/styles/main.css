@@ -1,0 +1,568 @@
+/*@font-face{
+         font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif, "SF", "SF";
+         src: url('font/SF.ttf');
+}*/
+@font-face{
+    font-family:'SF';
+    src:url('font/SF.eot');/* IE9 Compat Modes */
+    src:url('font/SF.eot?#iefix')format('embedded-opentype'),/* IE6-IE8 */
+    url('font/SF.woff')format('woff'),/* Modern Browsers */
+    url('font/SF.ttf')format('truetype'),/* Safari, Android, iOS */
+    url('font/SF.svg#SF')format('svg');/* Legacy iOS */
+}
+#loginground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+#nickground {
+    display: none;
+}
+html, body {
+    margin: 0;
+    background-color: #efefef;
+    font-family:  "SF";
+}
+.background {
+    position:fixed;   
+    width: auto;
+    height: 100%;
+    padding: 100%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+.sidebar{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width: 5.69rem;
+    height: 100%;
+    background: rgba(72,72,72,0.59);
+    border-radius: 30px;
+    border-radius: 30px;
+}
+
+.sideicon{
+    position:fixed;
+    top: 1.25rem;
+    left: 0.41rem;
+}
+
+.sideicon img{
+    width:4.88rem;
+    height:4.88rem;
+}
+
+.sidechat{
+    position:fixed;   
+    top: 8.75rem;
+    left: 0.35rem;
+    width:4.88rem;
+    height:4.88rem;
+    background: rgba(0,0,0,0.18);
+    border: 1px solid rgba(0,0,0,0.81);
+    border-radius: 16px;
+    font-family:  "SF";
+    font-size: 60px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.sidechat p{
+    position:fixed;   
+    top: 5.25rem;
+    left: 0.73rem;
+}
+
+.sidemore{
+    position:fixed;   
+    top: 11.75rem;
+    left: 0.41rem;
+    width:4.88rem;
+    height:4.88rem;
+    font-family:  "SF";
+    font-size: 60px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.listintro{
+    background: rgba(181,181,181,0.68);
+    position:fixed;   
+    top: 0rem;
+    left: 5.6rem;
+    width:23rem;
+    height:30rem;
+    border-radius: 30px;
+}
+
+.listintro p1{
+    position:fixed;   
+    top: 2rem;
+    left: 12rem;
+    font-family:  "SF";
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.listintro p2{
+    position:fixed;   
+    top: 7rem;
+    left: 13rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+.listintro p3{
+    position:fixed;   
+    top: 9rem;
+    left: 7rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.listintro p8{
+    position:fixed;   
+    top: 11rem;
+    left: 7rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+.listintro p9{
+    position:fixed;   
+    top: 13rem;
+    left: 14rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+.listintro p5{
+    position:fixed;   
+    top: 17rem;
+    left: 12rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+.listintro p7{
+    position:fixed;   
+    top: 21rem;
+    left: 14rem;
+    font-family:  "SF";
+    font-size: 25px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.boundary{
+    position:fixed;   
+    top: 0rem;
+    left: 28.31rem;
+    height: 64rem;
+    width: 0.03rem;
+    border: 3px solid #00000071;
+    background: #00000071;
+}
+
+/*#loginground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}*/
+#nickground {
+    display: none;
+}
+.banner {
+    position: fixed;
+    top: 0;
+    left: 28.7999rem;
+    right: 0;
+    height: 3.75rem;
+    width: auto;
+    background: rgba(216,216,216,0.93);
+    border-radius: 18px;
+    border-radius: 18px;
+    font-family:  "SF";
+    font-size: 39px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.banner span {
+    position: fixed;
+    top: 2rem;
+    left: 67rem;
+    font-family:  "SF";
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+}
+#hisMsg {
+    position:fixed;   
+    top: 3.75rem;
+    left: 28.8rem;
+    bottom: 21.63rem;
+    height: 20.63rem;
+    width: 58.69rem;
+    background: rgba(255,255,255,0.02);
+    padding: 20px 0;
+    overflow: auto;
+}
+#hisMsg img {
+    max-width: 20%;
+}
+.column {
+    position: fixed;
+    top: 25rem;
+    left: 28.70rem;
+    right: 0;
+    height: 21.63rem;
+    width: auto;
+    background: rgba(255,255,255,0.90);
+    border-radius: 55px;
+    border-radius: 55px;
+}
+
+#messageInput {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    position: fixed;
+    top: 28.5rem;
+    left: 28.70rem;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 50.89rem;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255,255,255,0.90);
+    border-radius: 3px;
+    border-radius: 3px;
+    outline:0;
+    
+}
+
+/*
+#messageInput {
+    position: fixed;
+    top: 28.5rem;
+    left: 28.70rem;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 50.89rem;
+    border: 1px solid #ccc; 
+    padding: 7px 0px;
+    border-radius: 3px; 
+    padding-left:5px; 
+}
+*/
+
+.timespan {
+    color: #ddd;
+}
+.items {
+    height: 30px;
+}
+.items button {
+    -webkit-appearance: none;
+    font-family:  "SF";
+    font-size: 35px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/*end custom file input*/
+
+
+#sendBtn {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 96px;
+    float: right;
+}
+#emojiground {
+    display: none;
+    width: 500px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiground img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiground img:hover {
+    background-color: rgb(183, 0, 255);
+}
+emoji{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25rem;
+    left: 34.59rem;
+    height: 2.44rem;
+    width: 2.44rem;
+    display: inline;
+    font-family:  "SF";
+    font-size: 35px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+.emobtn{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 32.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+.emobtn button{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 32.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.colbtn{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 41.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.colbtn button{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 41.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.colorStyle{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 41.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.colbtn colorStyle{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 41.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+.imabtn{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 38.59rem;
+    font-family:  "SF";
+    font-size: 19px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.50rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.imabtn button{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 38.59rem;
+    font-family:  "SF";
+    font-size: 19px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.50rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+.clebtn{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 35.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+.clebtn button{
+    -webkit-appearance: none;
+    position: fixed;
+    top: 25.5rem;
+    left: 35.59rem;
+    font-family:  "SF";
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: hidden;
+    height: 2.44rem;
+    width: 2.44rem;
+    background: rgba(228,228,228,0.60);
+    box-shadow: 1px 0 1px 0 rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+}
+
+
